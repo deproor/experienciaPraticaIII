@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ONG Amigos de Patas — SPA</title>
+  <link rel="stylesheet" href="../css/styles.css"/>
+</head>
+<body>
+  <header class="cabecalho">
+    <div class="cabecalho-conteudo container">
+      <h1 class="logo">ONG Amigos de Patas</h1>
+      <ul class="menu-principal">
+        <li><a href="#/">Início</a></li>
+        <li class="menu-item-com-submenu">
+          <a href="#/projetos">Projetos ▾</a>
+          <div class="submenu">
+            <a href="#/projetos?filtro=andamento">Em andamento</a>
+            <a href="#/projetos?filtro=voluntariado">Voluntariado</a>
+            <a href="#/doar">Como doar</a>
+          </div>
+        </li>
+        <li><a href="#/cadastro">Cadastro</a></li>
+        <li><a href="#/doar">Doar</a></li>
+        <li><a href="#/admin">Admin</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="app" class="container secao">
+  </main>
+
+  <footer class="rodape">
+    <p>&copy; 2025 ONG Amigos de Patas</p>
+  </footer>
+
+  <script type="module" src="../js/main.js"></script>
+</body>
+</html>

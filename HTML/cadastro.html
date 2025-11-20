@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cadastro - Amigos de Patas</title>
+  <!-- CSS está na subpasta css -->
+  <link rel="stylesheet" href="../css/styles.css"/>
+</head>
+<body>
+  <header class="cabecalho">
+    <div class="cabecalho-conteudo container">
+      <h1 class="logo">Cadastro</h1>
+      <ul class="menu-principal">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="cadastro.html">Cadastro</a></li>
+        <li><a href="doar.html">Doar</a></li>
+        <li><a href="admin.html">Admin</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="container secao">
+    <form class="formulario">
+      <fieldset>
+        <legend>Informações Pessoais</legend>
+        <div class="campo">
+          <label for="nome">Nome Completo</label>
+          <input type="text" id="nome" name="nome" required>
+        </div>
+        <div class="campo">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="campo">
+          <label for="cpf">CPF</label>
+          <input type="text" id="cpf" name="cpf" required placeholder="000.000.000-00">
+        </div>
+        <div class="campo">
+          <label for="telefone">Telefone</label>
+          <input type="tel" id="telefone" name="telefone" required placeholder="(00) 00000-0000">
+        </div>
+        <div class="campo">
+          <label for="nascimento">Data de Nascimento</label>
+          <input type="date" id="nascimento" name="nascimento" required>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Endereço</legend>
+        <div class="campo">
+          <label for="endereco">Endereço</label>
+          <input type="text" id="endereco" name="endereco" required>
+        </div>
+        <div class="campo">
+          <label for="cep">CEP</label>
+          <input type="text" id="cep" name="cep" required placeholder="00000-000">
+        </div>
+        <div class="campo">
+          <label for="cidade">Cidade</label>
+          <input type="text" id="cidade" name="cidade" required>
+        </div>
+        <div class="campo">
+          <label for="estado">Estado</label>
+          <select id="estado" name="estado" required>
+            <option value="">Selecione</option>
+            <option value="AC">Acre</option>
+            <option value="AL">Alagoas</option>
+            <option value="AP">Amapá</option>
+            <option value="AM">Amazonas</option>
+            <option value="BA">Bahia</option>
+            <option value="CE">Ceará</option>
+            <option value="DF">Distrito Federal</option>
+            <option value="ES">Espírito Santo</option>
+            <option value="GO">Goiás</option>
+            <option value="MA">Maranhão</option>
+            <option value="MT">Mato Grosso</option>
+            <option value="MS">Mato Grosso do Sul</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="PA">Pará</option>
+            <option value="PB">Paraíba</option>
+            <option value="PR">Paraná</option>
+            <option value="PE">Pernambuco</option>
+            <option value="PI">Piauí</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="RO">Rondônia</option>
+            <option value="RR">Roraima</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="SP">São Paulo</option>
+            <option value="SE">Sergipe</option>
+            <option value="TO">Tocantins</option>
+          </select>
+        </div>
+      </fieldset>
+
+      <button class="botao botao-principal" type="submit">Enviar Cadastro</button>
+    </form>
+  </main>
+
+  <footer class="rodape">
+    <p>&copy; 2025 ONG Amigos de Patas</p>
+  </footer>
+</body>
+</html>

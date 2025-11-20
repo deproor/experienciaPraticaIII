@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Doações - Amigos de Patas</title>
+  <link rel="stylesheet" href="../css/styles.css"/>
+</head>
+<body>
+  <header class="cabecalho">
+    <div class="cabecalho-conteudo container">
+      <h1 class="logo">Contribua com a ONG Amigos de Patas</h1>
+      <ul class="menu-principal">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="cadastro.html">Cadastro</a></li>
+        <li><a href="doar.html">Doar</a></li>
+        <li><a href="admin.html">Admin</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="container secao">
+    <section class="secao bloco-doacao">
+      <h2 class="titulo-secao">Escolha um valor para doar</h2>
+      <form class="formulario">
+        <div class="campo">
+          <label>
+            <input type="radio" name="valor" value="20"> R$ 20,00
+          </label>
+          <label>
+            <input type="radio" name="valor" value="50"> R$ 50,00
+          </label>
+          <label>
+            <input type="radio" name="valor" value="100"> R$ 100,00
+          </label>
+        </div>
+
+        <div class="campo">
+          <label for="valor-personalizado">Outro valor</label>
+          <input type="number" id="valor-personalizado" name="valor" min="5" step="5" placeholder="R$">
+        </div>
+
+        <button class="botao botao-principal" type="submit">Continuar para pagamento</button>
+      </form>
+    </section>
+
+    <section class="secao">
+      <h2 class="titulo-secao">Formas de pagamento</h2>
+      <ul>
+        <li>Pix: chave aleatória enviada após confirmação</li>
+        <li>Cartão de crédito ou débito</li>
+        <li>Boleto bancário</li>
+      </ul>
+      <p>Após o pagamento, você poderá se cadastrar para receber atualizações e relatórios.</p>
+      <a class="botao botao-outline" href="cadastro.html">Quero me cadastrar</a>
+    </section>
+
+    <section class="secao">
+      <h2 class="titulo-secao">Transparência e Impacto</h2>
+      <p>Todos os recursos são aplicados diretamente nos cuidados, resgates e campanhas da ONG.</p>
+      <p>Você pode acompanhar os resultados e prestação de contas em nossos relatórios públicos.</p>
+      <a class="botao botao-secundario" href="index.html">Ver relatórios</a>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>&copy; 2025 ONG Amigos de Patas</p>
+  </footer>
+</body>
+</html>
